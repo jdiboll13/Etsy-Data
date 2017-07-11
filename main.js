@@ -55,7 +55,10 @@ function question4 () {
 function question5 () {
   data.forEach(function(data){
     if (data.materials.length >= 8){
-    console.log(data.title + " has " + data.materials.length + " materials: " + data.materials);
+    console.log(data.title + " has " + data.materials.length + " materials:")
+    data.materials.forEach(function(data){
+      console.log("- " + data)
+    })
     }
   })
 }
